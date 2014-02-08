@@ -70,6 +70,7 @@ Vector3d Vector3d::unitVec(){
 double Vector3d::getX() const{ return coords[0]; }
 double Vector3d::getY() const{ return coords[1]; }
 double Vector3d::getZ() const{ return coords[2]; }
+const double *Vector3d::getCoords() const{ return coords; }
 
 void Vector3d::print() const{
 	std::cout << "(" << coords[0] << ", " << coords[1] << ", ";

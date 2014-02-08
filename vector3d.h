@@ -24,6 +24,7 @@ class Vector3d{
 		double getX() const;
 		double getY() const;
 		double getZ() const;
+		const double *getCoords() const;
 		
 		void print() const;
 };
