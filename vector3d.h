@@ -19,6 +19,7 @@ class Vector3d{
 		
 		Vector3d negate();
 		double magnitude();
+		double squareMag();
 		Vector3d unitVec();
 		
 		double getX() const;

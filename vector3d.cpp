@@ -58,8 +58,13 @@ Vector3d Vector3d::negate(){
 }
 
 double Vector3d::magnitude(){
-	double x = coords[0], y = coords[1], z = coords[2];
-	return sqrt(x*x+y*y+z*z);
+	return sqrt(squareMag());
+}
+
+double Vector3d::squareMag(){
+	return (coords[0]*coords[0])
+		+(coords[1]*coords[1])
+		+(coords[2]*coords[2]);
 }
 
 Vector3d Vector3d::unitVec(){
